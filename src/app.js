@@ -26,7 +26,7 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index',{
         title: 'Weather',
-        name: 'Andrew Mead',
+        name:'Shubham Saxena',
 
     });
 })
@@ -34,7 +34,7 @@ app.get('', (req, res) => {
 app.get('/about',(req, res) => {
     res.render('about',{
         title: 'About Me',
-        name: 'Andrew Mead',
+        name:'Shubham Saxena',
     });
 });
 
@@ -42,7 +42,7 @@ app.get('/help',(req, res) => {
     res.render('help',{
         title: 'Help Page',
         description: 'Welcome to the Helper Page!',
-        name: 'Andrew Mead',
+        name:'Shubham Saxena',
         
     });
 })
@@ -114,7 +114,7 @@ return res.send({
 app.get('/help/*', (req, res)=>{
     res.render('404', {
      title: '404 Page',
-     name:'Andrew Mead',
+     name:'Shubham Saxena',
 errorMessage: 'Help article not Found'
     });
  })
@@ -122,7 +122,7 @@ errorMessage: 'Help article not Found'
 app.get('*', (req, res) => {
 res.render('404',{
     title: '404 Page',
-    name:'Andrew Mead',
+    name:'Shubham Saxena',
     errorMessage: 'Page not found',
 })
 })

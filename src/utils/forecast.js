@@ -12,7 +12,8 @@ const forecast= (latitude, longitude, callback)=>{
     //in geocode('New York', (error='Unable to conncet to location services!',data=undefined)=>{})
     } else {
 callback(undefined,
- `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out.`,
+ `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees out.
+ Humidity is ${body.current.humidity} and wind direction is ${body.current.wind_dir}`,
 
 )
 
